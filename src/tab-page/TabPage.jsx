@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { useDispatch, useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
-
 import { Toast } from '@openedx/paragon';
-import { LearningHeader as Header } from '@edx/frontend-component-header';
+// import { LearningHeader as Header } from '@edx/frontend-component-header';
+import Header from '@edx/frontend-component-header';
 import FooterSlot from '@openedx/frontend-slot-footer';
 import PageLoading from '../generic/PageLoading';
 import { getAccessDeniedRedirectUrl } from '../shared/access';
@@ -64,7 +64,9 @@ const TabPage = ({ intl, ...props }) => {
         </>
       )}
 
+      {/* <LearningHeader courseOrg={org} courseNumber={number} courseTitle={title} /> */}
       <Header courseOrg={org} courseNumber={number} courseTitle={title} />
+      {/* <Header /> */}
 
       {courseStatus === 'loading' && (
         <PageLoading srMessage={intl.formatMessage(messages.loading)} />
