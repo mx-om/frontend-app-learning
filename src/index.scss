@@ -5,8 +5,6 @@
 
 // @import "~@edx/frontend-component-footer/dist/footer";
 @import "~@edx/frontend-component-header/dist/index";
-// @import "./mx_test/mxlearningheader/index";
-
 
 #root {
   display: flex;
@@ -430,6 +428,15 @@
   position: sticky;
   top: 0;
 }
+
+[data-testid="instructor-toolbar"] .bg-primary {
+  background-color: #0075b4 !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #0075b4 !important;
+}
+
 
 // Import component-specific sass files
 @import "courseware/course/celebration/CelebrationModal.scss";
