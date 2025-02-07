@@ -437,6 +437,9 @@
   background-color: #0075b4 !important;
 }
 
+.userway_buttons_wrapper {
+  top: -13px !important;
+}
 
 // Import component-specific sass files
 @import "courseware/course/celebration/CelebrationModal.scss";
