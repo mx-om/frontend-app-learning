@@ -85,7 +85,7 @@ const ContentIFrame = ({
         showError ? <ErrorPage /> : <PageLoading srMessage={loadingMessage} />
       )}
       {shouldShowContent && (
-        <div className="unit-iframe-wrapper">
+        <div className="unit-iframe-wrapper" id="mx-main">
           <iframe title={title} {...contentIFrameProps} data-testid={testIDs.contentIFrame} />
         </div>
       )}
